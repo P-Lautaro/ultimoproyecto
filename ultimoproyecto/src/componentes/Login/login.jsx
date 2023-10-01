@@ -15,6 +15,7 @@ const login = () =>{
       <div className="inputs">
         <div className="input">
             <img src={user_icon} alt="" />
+            <input type="user" />
         </div>
       </div>
 
