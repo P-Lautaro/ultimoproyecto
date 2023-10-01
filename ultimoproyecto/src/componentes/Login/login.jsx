@@ -7,7 +7,7 @@ import email_icon from '../Assets/email.png'
 
 const login = () =>{
    return (
-    <div>
+    <div className='container'>
 
     </div>
    ) 
