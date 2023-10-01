@@ -12,6 +12,7 @@ const login = () =>{
             <div className="text">Sing Up</div>
             <div className="underline"></div>
         </div>
+      <div className="inputs"></div>
 
     </div>
    ) 
