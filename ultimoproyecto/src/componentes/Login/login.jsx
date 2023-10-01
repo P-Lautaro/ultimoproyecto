@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import './login.css'
 
 import user_icon from '../Assets/person.png'
@@ -25,6 +25,9 @@ const login = () =>{
             <img src={password_icon}  alt="" />
             <input type="password" />
         </div>
+      </div>
+      <div className="submit-container">
+
       </div>
     </div>
    );
