@@ -21,6 +21,9 @@ const login = () =>{
             <img src={email_icon}  alt="" />
             <input type="email" />
         </div>
+        <div className="input">
+            
+        </div>
       </div>
 
     </div>
