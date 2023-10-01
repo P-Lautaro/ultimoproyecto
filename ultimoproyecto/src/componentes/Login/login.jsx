@@ -10,7 +10,7 @@ const login = () =>{
     <div className='container'>
         <div className="header">
             <div className="text">Sing Up</div>
-
+            <div className="underline"></div>
         </div>
 
     </div>
