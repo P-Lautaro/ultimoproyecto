@@ -19,6 +19,7 @@ const login = () =>{
         </div>
         <div className="input">
             <img src={email_icon}  alt="" />
+            <input type="email" />
         </div>
       </div>
 
