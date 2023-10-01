@@ -26,9 +26,8 @@ const login = () =>{
             <input type="password" />
         </div>
       </div>
-
     </div>
-   ) 
-}
+   );
+};
 
-export default login
+export default login;
