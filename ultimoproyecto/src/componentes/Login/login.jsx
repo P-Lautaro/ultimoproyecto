@@ -22,7 +22,7 @@ const login = () =>{
             <input type="email" />
         </div>
         <div className="input">
-            
+            <img src={password_icon}  alt="" />
         </div>
       </div>
 
