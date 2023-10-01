@@ -27,7 +27,8 @@ const login = () =>{
         </div>
       </div>
       <div className="submit-container">
-        <div className="submit"></div>
+        <div className="submit">Sign Up</div>
+        <div className="submit">Login</div>
       </div>
     </div>
    );
