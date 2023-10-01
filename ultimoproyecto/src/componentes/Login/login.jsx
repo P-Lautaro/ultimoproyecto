@@ -9,7 +9,7 @@ const login = () =>{
    return (
     <div className='container'>
         <div className="header">
-            <div className="text">Sing UP</div>
+            <div className="text">Sing Up</div>
 
         </div>
 
