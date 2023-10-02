@@ -8,9 +8,9 @@ function App() {
   useEffect(()=>{
   setLoading(true)
   setTimeout(()=>{
-  setLoading(false)
-  },3000)
-  },[])
+  setLoading(false);
+  },3000);
+  },[]);
 
   return (
     <div className='App'>
