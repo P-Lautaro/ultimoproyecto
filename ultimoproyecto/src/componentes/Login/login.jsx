@@ -7,7 +7,7 @@ import email_icon from '../Assets/email.png';
 
 const login = () =>{
 
-   const [action,setAction] = useState("Sing Up");
+   const [action,setAction] = useState("Login");
 
    return (
     <div className='container'>
