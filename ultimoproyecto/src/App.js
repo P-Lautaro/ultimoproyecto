@@ -5,8 +5,9 @@ import { useState, useEffect } from 'react';
 function App() {
   const [loading, setLoading] = useState(false)
   useEffect(()=>{
-    
-  })
+  setLoading(false)
+  
+  },[])
   return (
     <div>
       <Login/>
