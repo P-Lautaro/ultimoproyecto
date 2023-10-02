@@ -43,7 +43,7 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 480px;
+    width: 350px;
     height: 80px;
     background: rgb(210, 216, 219);
     border-radius: 6px;
@@ -53,4 +53,5 @@
 }
 .input input{
     height: 50px;
+    width: 350px;
 }
