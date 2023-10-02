@@ -12,7 +12,7 @@ const login = () =>{
    return (
     <div className='container'>
         <div className="header">
-            <div className="text">Sing Up</div>
+            <div className="text">action</div>
             <div className="underline"></div>
         </div>
       <div className="inputs">
@@ -36,7 +36,7 @@ const login = () =>{
       </div>
       <div className="forgot-password"> Lost Password? <span>Click Here!</span></div>
       <div className="submit-container">
-        <div className="submit">Sign Up</div>
+        <div className={action==="Login"}>Sign Up</div>
         <div className="submit">Login</div>
       </div>
     </div>
