@@ -28,7 +28,7 @@ const login = () =>{
 
         <div className="input">
             <img src={password_icon}  alt="" />
-            <input type="password" />
+            <input type="password" placeholder="Password" />
         </div>
       </div>
       <div className="forgot-password"> Lost Password? <span>Click Here!</span></div>
