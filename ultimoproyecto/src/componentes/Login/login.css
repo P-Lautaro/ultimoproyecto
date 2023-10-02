@@ -10,5 +10,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100%;
+    gap: 9px;
+    width: 100%;
 }
