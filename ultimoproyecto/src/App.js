@@ -10,9 +10,12 @@ function App() {
   setLoading(false)
   },5000)
   },[])
+
   return (
-    <div>
-      <Login/>
+    <div className='App'>
+      <div>
+        <Login/>
+      </div>
     </div>
   );
 }
