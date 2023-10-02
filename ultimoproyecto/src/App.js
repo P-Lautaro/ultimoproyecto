@@ -13,9 +13,20 @@ function App() {
 
   return (
     <div className='App'>
-      <div>
-        <Login/>
-      </div>
+      {loading ? (
+        <ClipLoader
+          color={color}
+          loading={loading}
+          cssOverride={override}
+          size={150}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      ) : (
+        <div>
+          <Login />
+        </div>
+      )}
     </div>
   );
 }
