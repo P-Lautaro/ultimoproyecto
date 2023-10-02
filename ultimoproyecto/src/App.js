@@ -15,13 +15,12 @@ function App() {
   return (
     <div className='App'>
       {loading ? (
-        <ClipLoader
-          color={color}
-          loading={loading}
-          size={150}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
+        <HashLoader
+        color="rgba(54, 215, 183, 1)"
+        cssOverride={{}}
+        loading
+        size={0}
+      />
       ) : (
         <div>
           <Login />
