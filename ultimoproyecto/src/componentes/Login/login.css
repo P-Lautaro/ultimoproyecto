@@ -1,7 +1,8 @@
 .container{
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 200px;
     background:rgb(255, 255, 255);
     padding-bottom: 30px;
@@ -13,11 +14,15 @@
     gap: 9px;
     width: 100%;
     margin-top: 30px;
+    margin-left: auto;
+  margin-right: auto;
 }
 .text{
     color: rgb(84, 7, 146);
     font-size: 40px;
     font-weight: 650;
+    margin-left: auto;
+    margin-right: auto;
 }
 .underline{
     width: 61px;
@@ -30,11 +35,14 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .input{
     display: flex;
     align-items: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 480px;
     height: 80px;
     background: rgb(210, 216, 219);
