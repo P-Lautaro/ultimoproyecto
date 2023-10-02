@@ -7,3 +7,4 @@ const ErrorMessage = ({ message }) => {
         </div>
       );
 }
+export { ErrorMessage };
