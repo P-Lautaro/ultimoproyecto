@@ -13,6 +13,12 @@ const Login = () =>{
 
   const handleLogin = () => {
     const isInvalid = true; 
+    if (isInvalid) {
+      setError("Nombre de usuario, correo o contraseña incorrectos");
+    } else {
+      setError(""); 
+      
+    }
     
   };
 
