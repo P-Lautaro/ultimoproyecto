@@ -5,10 +5,10 @@ import { useState, useEffect } from 'react';
 function App() {
   const [loading, setLoading] = useState(false)
   useEffect(()=>{
-  setLoading(false)
+  setLoading(true)
   setTimeout(()=>{
-    
-  })
+  setLoading(false)
+  },5000)
   },[])
   return (
     <div>
