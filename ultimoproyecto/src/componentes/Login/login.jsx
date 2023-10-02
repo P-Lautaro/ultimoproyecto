@@ -16,11 +16,12 @@ const login = () =>{
             <div className="underline"></div>
         </div>
       <div className="inputs">
-
-        <div className="input">
+      {action==="Login"?<div></div>:<div className="input">
             <img src={user_icon} alt="" />
             <input type="user" placeholder="Name"/>
-        </div>
+        </div> }
+
+        
 
 
         <div className="input">
