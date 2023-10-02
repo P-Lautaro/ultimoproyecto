@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ErrorMessage } from './ErrorMessage';
+import CustomErrorMessage from './ErrorMessage';
 import './login.css';
 
 import user_icon from '../Assets/person.png';
@@ -54,7 +54,7 @@ const Login = () =>{
         <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
         <div className={action==="Sign Up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</div>
       </div>
-      {error && <ErrorMessage message={error} />} 
+      {error && <CustomErrorMessage message={error} />} 
     </div>
    );
 };
