@@ -1,7 +1,7 @@
 import './App.css';
 import Login from './componentes/Login/login'; 
 import { useState, useEffect } from 'react';
-import ClipLoader from "react-spinners/ClipLoader";
+import HashLoader from "react-spinners/HashLoader";
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -20,7 +20,7 @@ function App() {
         cssOverride={{}}
         loading
         size={0}
-      />
+        />
       ) : (
         <div>
           <Login />
