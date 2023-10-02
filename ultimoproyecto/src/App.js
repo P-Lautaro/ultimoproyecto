@@ -1,7 +1,7 @@
 import './App.css';
 import Login from './componentes/Login/login'; 
 import { useState, useEffect } from 'react';
-import ClipLoader from "react-spinners/ClipLoader";
+import HashLoader from "react-spinners/HashLoader";
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -16,7 +16,7 @@ function App() {
     <div className='App'>
       {loading ? (
         <div className="loader-container">
-          <ClipLoader
+          <HashLoader
             color="rgba(54, 215, 183, 1)"
             loading={loading}
             size={50}
