@@ -70,4 +70,5 @@
 }
 .forgot-password span{
     color: #4c00b4;
+    cursor: pointer;
 }
