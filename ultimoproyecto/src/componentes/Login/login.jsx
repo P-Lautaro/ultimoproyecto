@@ -13,14 +13,19 @@ const login = () =>{
             <div className="underline"></div>
         </div>
       <div className="inputs">
+        
         <div className="input">
             <img src={user_icon} alt="" />
-            <input type="user" />
+            <input type="user" placeholder="Name"/>
         </div>
+
+
         <div className="input">
             <img src={email_icon}  alt="" />
             <input type="email" />
         </div>
+
+
         <div className="input">
             <img src={password_icon}  alt="" />
             <input type="password" />
