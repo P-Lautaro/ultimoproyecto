@@ -14,6 +14,7 @@ function App() {
   },[]);
 
   return (
+    <AuthProvider>
     <div className='App'>
       {loading ? (
         <div className="loader-container">
@@ -31,6 +32,7 @@ function App() {
         </div>
       )}
     </div>
+    </AuthProvider>
   );
 }
 
