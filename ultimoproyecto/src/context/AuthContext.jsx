@@ -11,3 +11,8 @@ export const useAuth = () => {
     }
     return context;
 };
+
+
+export function AuthProvider({children}){
+    return <authContext.Provider>{children}</authContext.Provider>
+}
