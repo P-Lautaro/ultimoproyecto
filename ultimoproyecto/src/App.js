@@ -2,6 +2,7 @@ import './App.css';
 import Login from './componentes/Login/login'; 
 import { useState, useEffect } from 'react';
 import HashLoader from "react-spinners/HashLoader";
+import { AuthProvider } from './context/AuthContext';
 
 function App() {
   const [loading, setLoading] = useState(false)
