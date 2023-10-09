@@ -10,17 +10,8 @@ import email_icon from '../Assets/email.png';
 const Login = () =>{
 
    const [action, setAction] = useState("Login");
-   const [error, setError] = useState(""); 
-
-  const handleLogin = () => {
-    const isInvalid = true; 
-    if (isInvalid) {
-      setError("Nombre de usuario, correo o contraseña incorrectos");
-    } else {
-      setError(""); 
-      
-    }
-  };
+  
+  
 
    return (
     <div className="container">
@@ -54,7 +45,6 @@ const Login = () =>{
         <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
         <div className={action==="Sign Up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</div>
       </div>
-      {error && <CustomErrorMessage message={error} />} 
     </div>
    );
 };
