@@ -15,5 +15,17 @@ export const useAuth = () => {
 
 
 export function AuthProvider({children}){
-    return <authContext.Provider>{children}</authContext.Provider>
+    const register = async(email, password) =>{
+        const response = await createUserWithEmailAndPassword(email, password)
+        console.log(response)
+    };
+    return(
+    <authContext.Provider 
+    value={{
+        register,
+    }}
+    >
+    {children}
+    </authContext.Provider>
+    );
 }
