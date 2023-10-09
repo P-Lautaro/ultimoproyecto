@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import CustomErrorMessage from './ErrorMessage';
 import './login.css';
 
 import user_icon from '../Assets/person.png';
