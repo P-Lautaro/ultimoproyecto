@@ -3,6 +3,8 @@ import Login from './componentes/Login/login';
 import { useState, useEffect } from 'react';
 import HashLoader from "react-spinners/HashLoader";
 import { AuthProvider } from './context/AuthContext';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from './home';
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -32,7 +34,9 @@ function App() {
         </div>
       )}
     </div>
+    <Route path="/home" element={<Home/>} />
     </AuthProvider>
+
   );
 }
 
