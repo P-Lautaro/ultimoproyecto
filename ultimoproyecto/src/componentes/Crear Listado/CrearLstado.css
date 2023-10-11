@@ -1,4 +1,14 @@
 .CrearListado{
     background-color: aqua;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #000000;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 70vh;
+    height: 30vh;
+    transition: all 0.5s;
+    border-radius: 25px;
     box-shadow: 3px 2px 10px #2b2929;
 }
