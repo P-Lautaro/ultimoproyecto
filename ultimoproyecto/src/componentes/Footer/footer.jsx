@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
+import './footer.css'
+
 export function Footer () {
     return(
         <footer className="footer">
