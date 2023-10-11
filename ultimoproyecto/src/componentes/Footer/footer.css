@@ -1,6 +1,5 @@
 .footer{
     background-color: #002c6f;
-    color: #63615f;
     text-align: center;
     align-items: center;
     padding: 8px;
@@ -20,4 +19,6 @@
 
 .footer-content a{
     text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
 }
