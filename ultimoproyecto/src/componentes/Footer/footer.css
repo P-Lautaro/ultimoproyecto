@@ -17,3 +17,7 @@
     max-width: 1500px;
     margin: 0;  
 }
+
+.footer-content a{
+    text-decoration: none;
+}
