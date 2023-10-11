@@ -15,12 +15,9 @@
     display: flex;
     background-color: #305c73;
     align-items: center;
-    gap: 9px;
-    width: 100%;
-    margin-top: 10px;
-    top: 0;
-    left: 0;
-    right: 0;
+    border-radius: 20px;
+    width: 61px;
+    left: 40%;
 }
 .text{
     color: rgb(84, 7, 146);
@@ -29,12 +26,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.underline{
-    width: 61px;
-    height: 6px;
-    background: rgb(84, 7, 146);
-    border-radius: 9px;
-}
+
 .inputs{
     margin-top: 55px;
     display: flex;
