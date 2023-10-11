@@ -2,7 +2,6 @@
     background-color: #002c6f;
     text-align: center;
     align-items: center;
-    padding: 8px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -20,5 +19,5 @@
 .footer-content a{
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 30px;
 }
