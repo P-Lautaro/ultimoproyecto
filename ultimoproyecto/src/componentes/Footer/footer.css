@@ -13,5 +13,7 @@
 }
 
 .footer-content{
-    
+    align-items: center;
+    max-width: 1500px;
+    margin: 0;  
 }
