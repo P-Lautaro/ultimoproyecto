@@ -33,7 +33,6 @@ const Login = () => {
         <div className="underline"></div>
       </div>
       <div className="inputs">
-<<<<<<< HEAD
       {action==="Login"?<div></div>:<div className="input">
             <img src={user_icon} alt="" />
             <input type="user" placeholder="Nombre"/>
@@ -42,23 +41,19 @@ const Login = () => {
         <div className="input">
             <img src={email_icon}  alt="" />
             <input type="email" placeholder="Email" />
-=======
         {action === "Login" ? null : (
           <div className="input">
             <input type="text" placeholder="Name" />
           </div>
         )}
-        <div className="input">
-          <input type="email" placeholder="Email Id" />
->>>>>>> a0699d76659a67f42c7ae315bd1db9c8623534d4
         </div>
         <div className="input">
-<<<<<<< HEAD
+          <input type="email" placeholder="Email Id" />
+        </div>
+        <div className="input">
             <img src={password_icon}  alt="" />
             <input type="password" placeholder="Contraseña" />
-=======
           <input type="password" placeholder="Password" />
->>>>>>> a0699d76659a67f42c7ae315bd1db9c8623534d4
         </div>
       </div>
 
@@ -81,7 +76,6 @@ const Login = () => {
       {action==="Sign Up"?<div></div>:<div className="forgot-password"> <a href="#">¿Has olvidado tu contraseña?</a></div>} 
       
       <div className="submit-container">
-<<<<<<< HEAD
       <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {
         console.log("Botón Sign Up clickeado");
         setAction("Sign Up");
@@ -90,7 +84,6 @@ const Login = () => {
         console.log("Botón Login clickeado");
         setAction("Login");
         }}>Ingresar</div>
-=======
        <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {
        console.log("Botón Sign Up clickeado");
        setAction("Sign Up");
@@ -99,9 +92,9 @@ const Login = () => {
        console.log("Botón Login clickeado");
        setAction("Login");
        }}>Ingresar</div>
->>>>>>> a0699d76659a67f42c7ae315bd1db9c8623534d4
       </div>
     </div>
+
   );
 };
 
