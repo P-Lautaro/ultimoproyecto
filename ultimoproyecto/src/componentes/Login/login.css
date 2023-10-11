@@ -16,8 +16,7 @@
     background-color: #305c73;
     align-items: center;
     border-radius: 20px;
-    width: 61px;
-    left: 40%;
+    justify-content: center;
 }
 .text{
     color: rgb(84, 7, 146);
