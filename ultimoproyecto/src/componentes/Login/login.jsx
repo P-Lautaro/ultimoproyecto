@@ -22,9 +22,6 @@ const Login = () =>{
             <input type="user" placeholder="Nombre"/>
         </div> }
 
-        
-
-
         <div className="input">
             <img src={email_icon}  alt="" />
             <input type="email" placeholder="Email" />
