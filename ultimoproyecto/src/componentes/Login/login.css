@@ -61,7 +61,13 @@
     margin-top: 27px;
     color: #797979;
     font-size: 18px;
+    text-decoration: none;
 }
+
+.forgot-password a{
+    text-decoration: none;
+}
+
 .forgot-password span{
     color: #4c00b4;
     cursor: pointer;
