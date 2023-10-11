@@ -8,6 +8,7 @@
     padding-bottom: 9px;
     max-width: 600px;
     border-radius: 20px;
+    padding: 10px;
 }
 .header{
     display: flex;
@@ -81,7 +82,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    padding: 5px;
+    width: 200px;
     height: 55px;
     color: #fff;
     background: #4c00b4;
