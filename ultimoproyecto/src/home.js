@@ -8,6 +8,7 @@ export default function Home () {
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
             <Footer/>
+            <CrearListado/>
         </div>
     )
 }
