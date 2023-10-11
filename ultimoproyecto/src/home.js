@@ -1,10 +1,12 @@
 import React, { Component, useEffect, useState } from "react";
 import ReactDOM from 'react-dom/client'
 
-import { Nav } from './componentes/Nav/nav.jsx';
+import { Nav } from "./componentes/Nav/nav";
 
 export default function Home () {
     return (
-        <Nav Infoh1="Asistencia de Alumnos"/>
+        <div>
+            <Nav Infoh1="Asistencia de Alumnos"/>
+        </div>
     )
 }
