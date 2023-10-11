@@ -46,7 +46,7 @@ const Login = () =>{
 <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => {
   console.log("Botón Login clickeado");
   setAction("Login");
-}}>Login</div>
+}}>Ingresar</div>
       </div>
     </div>
    );
