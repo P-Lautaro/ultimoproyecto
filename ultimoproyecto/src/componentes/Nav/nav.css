@@ -1,0 +1,14 @@
+.barra {
+    background-color: #191336;
+    color: #63615f;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 54px;
+    box-shadow: 3px 2px 10px #292b2b;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
