@@ -1,5 +1,5 @@
 .barra {
-    background-color: #191336;
+    background-color: #130b3b;
     position: absolute;
     color: #63615f;
     font-size: 20px;
@@ -12,4 +12,8 @@
     align-items: center;
     padding: 10px 20px;
     z-index: 1000;
+}
+.text{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
