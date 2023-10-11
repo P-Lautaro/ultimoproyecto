@@ -27,26 +27,26 @@ const Login = () =>{
 
         <div className="input">
             <img src={email_icon}  alt="" />
-            <input type="email" placeholder="Email Id" />
+            <input type="email" placeholder="Email" />
         </div>
 
 
         <div className="input">
             <img src={password_icon}  alt="" />
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Contrseña" />
         </div>
       </div>
       {action==="Sign Up"?<div></div>:<div className="forgot-password"> <a href="#">¿Has olvidado tu contraseña?</a></div>} 
       
       <div className="submit-container">
       <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {
-  console.log("Botón Sign Up clickeado");
-  setAction("Sign Up");
-}}>Registrarse</div>
-<div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => {
-  console.log("Botón Login clickeado");
-  setAction("Login");
-}}>Ingresar</div>
+        console.log("Botón Sign Up clickeado");
+        setAction("Sign Up");
+        }}>Registrarse</div>
+      <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => {
+        console.log("Botón Login clickeado");
+        setAction("Login");
+        }}>Ingresar</div>
       </div>
     </div>
    );
