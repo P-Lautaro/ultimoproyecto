@@ -19,7 +19,7 @@ const Login = () =>{
       <div className="inputs">
       {action==="Login"?<div></div>:<div className="input">
             <img src={user_icon} alt="" />
-            <input type="user" placeholder="Name"/>
+            <input type="user" placeholder="Nombre"/>
         </div> }
 
         
@@ -33,7 +33,7 @@ const Login = () =>{
 
         <div className="input">
             <img src={password_icon}  alt="" />
-            <input type="password" placeholder="Contrseña" />
+            <input type="password" placeholder="Contraseña" />
         </div>
       </div>
       {action==="Sign Up"?<div></div>:<div className="forgot-password"> <a href="#">¿Has olvidado tu contraseña?</a></div>} 
