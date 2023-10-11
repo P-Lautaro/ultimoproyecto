@@ -2,6 +2,7 @@
   "dependencies": {
     "create-react-app": "^1.2.1",
     "firebase": "^10.4.0",
+    "react-router-dom": "^6.16.0",
     "react-spinners": "^0.13.8"
   }
 }
