@@ -74,7 +74,7 @@ const Login = () => {
        setAction("Login");
        }}>Ingresar</div>
       </div>
-    
+    </div>
   );
 };
 
