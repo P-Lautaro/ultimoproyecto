@@ -45,6 +45,7 @@ const Login = () => {
           <input type="password" placeholder="Password" />
         </div>
       </div>
+
       {action === "Sign Up" ? (
         <div className="forgot-password"> Lost Password? <span>Click Here!</span></div>
       ) : null}
@@ -61,8 +62,21 @@ const Login = () => {
         </div>
         {/* Otros botones de inicio de sesion GitHub y Anónimo*/}
       </div>
-    </div>
+      {action==="Sign Up"?<div></div>:<div className="forgot-password"> <a href="#">¿Has olvidado tu contraseña?</a></div>} 
+      
+      <div className="submit-container">
+       <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {
+       console.log("Botón Sign Up clickeado");
+       setAction("Sign Up");
+       }}>Registrarse</div>
+       <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => {
+       console.log("Botón Login clickeado");
+       setAction("Login");
+       }}>Ingresar</div>
+      </div>
+    
   );
 };
+
 
 export default Login;

@@ -1,0 +1,19 @@
+.barra {
+    background-color: #305c73;
+    position: absolute;
+    color: #63615f;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 54px;
+    box-shadow: 3px 2px 10px #292b2b;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+.text{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
