@@ -1,22 +1,39 @@
 import React, { useState } from 'react';
 import './login.css';
+//import { useAuth } from './AuthContext.jsx'; 
+import { authContext } from '../../context/AuthContext';
 
-import user_icon from '../Assets/person.png';
-import password_icon from '../Assets/password.png';
-import email_icon from '../Assets/email.png';
+const Login = () => {
+  const { login, loginWithGoogle } = useAuth (''); // Usa el método de autenticación desde el contexto
+  const [ action, setAction ] = useState("Login");
+ 
 
+  const handleLogin = async (email, password) => {
+    try {
+      await login(email, password);
+      history.push('/');
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
 
-const Login = () =>{
+  const handleGoogleLogin = async () => {
+    try {
+      await loginWithGoogle();
+      history.push('/');
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
 
-   const [action, setAction] = useState("Login");
-
-   return (
+  return (
     <div className="container">
-        <div className="header">
-            <div className="text">{action}</div>
-            <div className="underline"></div>
-        </div>
+      <div className="header">
+        <div className="text">{action}</div>
+        <div className="underline"></div>
+      </div>
       <div className="inputs">
+<<<<<<< HEAD
       {action==="Login"?<div></div>:<div className="input">
             <img src={user_icon} alt="" />
             <input type="user" placeholder="Nombre"/>
@@ -25,17 +42,46 @@ const Login = () =>{
         <div className="input">
             <img src={email_icon}  alt="" />
             <input type="email" placeholder="Email" />
-        </div>
-
-
+=======
+        {action === "Login" ? null : (
+          <div className="input">
+            <input type="text" placeholder="Name" />
+          </div>
+        )}
         <div className="input">
+          <input type="email" placeholder="Email Id" />
+>>>>>>> a0699d76659a67f42c7ae315bd1db9c8623534d4
+        </div>
+        <div className="input">
+<<<<<<< HEAD
             <img src={password_icon}  alt="" />
             <input type="password" placeholder="Contraseña" />
+=======
+          <input type="password" placeholder="Password" />
+>>>>>>> a0699d76659a67f42c7ae315bd1db9c8623534d4
         </div>
+      </div>
+
+      {action === "Sign Up" ? (
+        <div className="forgot-password"> Lost Password? <span>Click Here!</span></div>
+      ) : null}
+      <div className="submit-container">
+        <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => setAction("Sign Up")}>
+          Sign Up
+        </div>
+        <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => setAction("Login")}>
+          Login
+        </div>
+        {/* Botón de inicio de sesión con Google */}
+        <div className="submit" onClick={handleGoogleLogin}>
+          Google Login
+        </div>
+        {/* Otros botones de inicio de sesion GitHub y Anónimo*/}
       </div>
       {action==="Sign Up"?<div></div>:<div className="forgot-password"> <a href="#">¿Has olvidado tu contraseña?</a></div>} 
       
       <div className="submit-container">
+<<<<<<< HEAD
       <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {
         console.log("Botón Sign Up clickeado");
         setAction("Sign Up");
@@ -44,9 +90,20 @@ const Login = () =>{
         console.log("Botón Login clickeado");
         setAction("Login");
         }}>Ingresar</div>
+=======
+       <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {
+       console.log("Botón Sign Up clickeado");
+       setAction("Sign Up");
+       }}>Registrarse</div>
+       <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => {
+       console.log("Botón Login clickeado");
+       setAction("Login");
+       }}>Ingresar</div>
+>>>>>>> a0699d76659a67f42c7ae315bd1db9c8623534d4
       </div>
     </div>
-   );
+  );
 };
+
 
 export default Login;
