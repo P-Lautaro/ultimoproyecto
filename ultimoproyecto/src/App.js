@@ -6,7 +6,7 @@ import HashLoader from "react-spinners/HashLoader";
 import { AuthProvider } from './context/AuthContext';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './home';
-import { CrearListado } from "./componentes/Crear Listado/crearListado";
+import Cistado from "./componentes/clistado";
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -22,7 +22,7 @@ function App() {
       <Routes>
           <Route exact path="/" element={<Login/>}/>
           <Route path="/Home" element={<Home/>} />
-          <Route path="/CrearLstado" element={<CrearListado/>}/>
+          <Route path="/Cistado" element={<Cistado/>}/>
       </Routes>
     </Router>
   );
