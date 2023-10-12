@@ -7,6 +7,7 @@ import { AuthProvider } from './context/AuthContext';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './home';
 import Cistado from "./componentes/clistado";
+import MListado from "./componentes/mlistado";
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/" element={<Login/>}/>
           <Route path="/Home" element={<Home/>} />
           <Route path="/Cistado" element={<Cistado/>}/>
+          <Route path="/MListado" element={<MListado/>}/>
       </Routes>
     </Router>
   );
