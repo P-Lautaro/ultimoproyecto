@@ -4,9 +4,9 @@
     font-weight: bolder;
     color: #000000;
     position: absolute;
-    top: 20%;
+    top: 35%;
     right: 5%;
-    width: 70vh;
+    width: 90vh;
     height: 30vh;
     transition: all 0.5s;
     border-radius: 25px;
@@ -14,6 +14,6 @@
     text-decoration: none;
 }
 p {
-    
-    text-align: center;
+    left: 45vh;
+    height: 15vh;
 }
