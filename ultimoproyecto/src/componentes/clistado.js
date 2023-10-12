@@ -6,7 +6,6 @@ export default function Cistado (){
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
-            
         </div>
     )
 }
