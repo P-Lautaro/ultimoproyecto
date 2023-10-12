@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthP
 
 export const authContext = createContext();
 
-export function AuthProvider({ children }) {
+export function AuthProvider ({ children }) {
     const register = async (email, password) => {
         const response = await createUserWithEmailAndPassword(auth, email, password);
         console.log(response);
