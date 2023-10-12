@@ -11,6 +11,7 @@ export default function Home () {
             <Nav Infoh1="Asistencia de Alumnos"/>
             <Footer/>
             <CrearListado/>
+            <ModificarListado/>
         </div>
     )
 }
