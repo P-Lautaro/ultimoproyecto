@@ -16,7 +16,6 @@ export default function Cistado (){
                                 <th>Apellido</th>
                                 <th>D.N.I</th>
                                 <th></th>
-                                <th></th>
                             </tr>
                         </thead>
                     </table>
