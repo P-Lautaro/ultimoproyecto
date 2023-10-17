@@ -5,6 +5,6 @@ import { Link } from "react-router-dom";
 
 export function ModificarListado () {
     return (
-        <Link to="/MListado" className="modificarListado"><p>Modificar Listado</p></Link>
+        <Link to="/Modificar-Listado" className="modificarListado"><p>Modificar Listado</p></Link>
     )
 }
