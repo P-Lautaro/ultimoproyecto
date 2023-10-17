@@ -19,7 +19,11 @@ export default function Cistado (){
                             </tr>
                         </thead>
                         <tbody>
-                            
+                        {alumnos.map((nota, index) => (
+                            <tr key={index}>
+                                
+                            </tr>
+                            ))}
                         </tbody>
                     </table>
                 </div>
