@@ -6,6 +6,9 @@ export default function MListado (){
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
+            <div className="Modificar">
+
+            </div>
         </div>
     )
 }
