@@ -9,6 +9,9 @@ export default function Cistado (){
             <div className="listado">
                 <div className="titulo">
                     <h2>Crear Listado</h2>
+                    <table className="tabla">
+
+                    </table>
                 </div>
             </div>
         </div>
