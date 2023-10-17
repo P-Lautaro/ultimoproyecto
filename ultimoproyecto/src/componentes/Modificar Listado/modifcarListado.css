@@ -1,5 +1,5 @@
 .modificarListado{
-    background-color: rgb(146, 146, 146);
+    background-color: rgb(236, 236, 236);
     font-size: 22px;
     font-weight: bolder;
     color: #000000;
@@ -14,5 +14,5 @@
     text-decoration: none;
 }
 .modificarListado:hover{
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(122, 122, 122);
 }
