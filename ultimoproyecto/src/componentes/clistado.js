@@ -25,7 +25,18 @@ export default function Cistado (){
                                 <td>{nota.apellido}</td>
                                 <td>{nota.dni}</td>
                             </tr>
-                            ))}
+                        ))}
+                        <tr>
+                            <td>
+                                <input
+                                type="text"
+                                value={nuevoAlumno.nombre}
+                                onChange={(e) =>
+                                    setNuevoAlumno({ ...nuevoAlumno, nombre: e.target.value })
+                                }
+                                />
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
