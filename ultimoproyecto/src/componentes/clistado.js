@@ -10,6 +10,12 @@ export default function Cistado (){
       dni: "",
     });
 
+    const handleAgregarAlumno = () => {
+        const nuevosAlumnos = [...alumnos];
+        nuevosAlumnos.push(nuevoAlumno);
+        setAlumnos(nuevosAlumnos);
+      };
+
     const isCamposCompletos =
     nuevoAlumno.nombre &&
     nuevoAlumno.apellido &&
