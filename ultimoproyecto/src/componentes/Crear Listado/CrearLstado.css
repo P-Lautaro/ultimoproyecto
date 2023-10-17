@@ -60,3 +60,12 @@ p {
 .tabla th {
     background-color: #63615f;
 }
+
+button{
+    background-color: #14f500;;
+}
+
+
+button a{
+    color: rgb(32, 32, 32);
+}
