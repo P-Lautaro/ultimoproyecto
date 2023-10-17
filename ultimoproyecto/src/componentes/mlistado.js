@@ -7,6 +7,7 @@ export default function MListado (){
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
             <div className="Modificar">
+                <h2 className="titulo">Modificar Listado</h2>
 
             </div>
         </div>
