@@ -3,6 +3,11 @@ import ReactDOM from "react-dom/client";
 import { Nav } from "./Nav/nav";
 import './Crear Listado/CrearLstado.css'
 export default function Cistado (){
+    const handleAgregarAlumno = () => {
+        const nuevosAlumnos = [...alumnos];
+        nuevosAlumnos.push(nuevoAlumno);
+        setAlumnos(nuevosAlumnos);
+    }
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
