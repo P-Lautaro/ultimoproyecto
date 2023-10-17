@@ -54,6 +54,14 @@ export default function Cistado (){
                                 }
                                 />
                             </td>
+                            <td>
+                                <button
+                                onClick={handleAgregarAlumno}
+                                disabled={!isCamposCompletos}
+                                >
+                                +
+                                </button>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
