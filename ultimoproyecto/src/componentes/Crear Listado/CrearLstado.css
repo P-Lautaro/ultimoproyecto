@@ -62,8 +62,9 @@ p {
 }
 
 input{
-    background-color: #9c9c9c;
+    background-color: #ffffff;
     height: 20px;
+    border-radius: 10px;
 }
 
 button{
