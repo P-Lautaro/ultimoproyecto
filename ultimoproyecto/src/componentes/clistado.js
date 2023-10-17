@@ -3,6 +3,15 @@ import ReactDOM from "react-dom/client";
 import { Nav } from "./Nav/nav";
 import './Crear Listado/CrearLstado.css'
 export default function Cistado (){
+    const [userData, setUserData] = useState("");
+    const [alumnos, setAlumnos] = useState([]);
+    const [nuevoAlumno, setNuevoAlumno] = useState({
+      nombre: "",
+      apellido: "",
+      dni: "",
+      asistencias: "",
+      informe: "",
+    });
 
     const isCamposCompletos =
     nuevoAlumno.nombre &&
