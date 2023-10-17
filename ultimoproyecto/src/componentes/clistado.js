@@ -21,7 +21,9 @@ export default function Cistado (){
                         <tbody>
                         {alumnos.map((nota, index) => (
                             <tr key={index}>
-                                
+                                <td>{nota.nombre}</td>
+                                <td>{nota.apellido}</td>
+                                <td>{nota.dni}</td>
                             </tr>
                             ))}
                         </tbody>
