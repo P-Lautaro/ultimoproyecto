@@ -5,6 +5,6 @@ import { Link } from "react-router-dom";
 
 export function CrearListado () {
     return (
-        <Link to="/Crear-istado" className="CrearListado"><p>Crear Listado</p></Link>
+        <Link to="/Crear-Listado" className="CrearListado"><p>Crear Listado</p></Link>
     )
 }

@@ -23,7 +23,7 @@ function App() {
       <Routes>
           <Route exact path="/" element={<Login/>}/>
           <Route path="/Home" element={<Home/>} />
-          <Route path="/Cistado" element={<Cistado/>}/>
+          <Route path="/Crear-Listado" element={<Cistado/>}/>
           <Route path="/MListado" element={<MListado/>}/>
       </Routes>
     </Router>
