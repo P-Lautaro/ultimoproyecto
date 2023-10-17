@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import { Nav } from "./Nav/nav";
+import './Modificar Listado/modifcarListado.css'
 
 export default function MListado (){
     return (
