@@ -7,7 +7,15 @@ export default function Cistado (){
         const nuevosAlumnos = [...alumnos];
         nuevosAlumnos.push(nuevoAlumno);
         setAlumnos(nuevosAlumnos);
-    }
+
+        setNuevoAlumno({
+            nombre: "",
+            apellido: "",
+            dni: "",
+            asistencias: "",
+            informe: "",
+          });
+    };
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
