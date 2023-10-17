@@ -7,7 +7,9 @@ export default function Cistado (){
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
             <div className="listado">
+                <div className="titulo">
 
+                </div>
             </div>
         </div>
     )
