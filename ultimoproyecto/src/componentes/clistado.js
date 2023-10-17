@@ -10,7 +10,15 @@ export default function Cistado (){
                 <div className="titulo">
                     <h2>Crear Listado</h2>
                     <table className="tabla">
-
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>D.N.I</th>
+                                <th>Asistencias</th>
+                                <th>Informe</th>
+                            </tr>
+                        </thead>
                     </table>
                 </div>
             </div>
