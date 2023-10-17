@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import { Nav } from "./Nav/nav";
-
+import './Crear Listado/CrearLstado.css'
 export default function Cistado (){
     return (
         <div>
