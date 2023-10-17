@@ -4,6 +4,14 @@ import { Nav } from "./Nav/nav";
 import './Crear Listado/CrearLstado.css'
 export default function Cistado (){
     const handleAgregarAlumno = () => {
+        const [userData, setUserData] = useState("");
+        const [alumnos, setAlumnos] = useState([]);
+        const [nuevoAlumno, setNuevoAlumno] = useState({
+          nombre: "",
+          apellido: "",
+          dni: "",
+        });
+
         const nuevosAlumnos = [...alumnos];
         nuevosAlumnos.push(nuevoAlumno);
         setAlumnos(nuevosAlumnos);
