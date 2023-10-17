@@ -21,5 +21,14 @@ p{
 }
 
 .Modificar{
-    
+    position: absolute;
+    top: 20%;
+    background-color: #305c73;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    height: max-content; /* Ocupa todo el alto de la ventana */
+    width: 800px;
+    left: 18%;
+    margin-top: 5%;
 }
