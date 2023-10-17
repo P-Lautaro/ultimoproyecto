@@ -61,6 +61,11 @@ p {
     background-color: #63615f;
 }
 
+input{
+    background-color: #9c9c9c;
+    height: 20px;
+}
+
 button{
     background-color: #14f500;
     width: 100%;
