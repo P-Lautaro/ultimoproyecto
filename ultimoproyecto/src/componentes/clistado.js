@@ -19,7 +19,6 @@ export default function Cistado (){
             nombre: "",
             apellido: "",
             dni: "",
-
           });
     };
 
