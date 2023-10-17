@@ -32,3 +32,9 @@ p {
     left: 4%;
     margin-top: 5%;
 }
+
+.titulo{
+    font-size: 30px;
+    color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
