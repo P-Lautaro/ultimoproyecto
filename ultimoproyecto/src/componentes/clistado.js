@@ -15,8 +15,6 @@ export default function Cistado (){
                                 <th>Nombre</th>
                                 <th>Apellido</th>
                                 <th>D.N.I</th>
-                                <th>Asistencias</th>
-                                <th>Informe</th>
                             </tr>
                         </thead>
                     </table>
