@@ -18,6 +18,9 @@ export default function Cistado (){
                                 <th></th>
                             </tr>
                         </thead>
+                        <tbody>
+                            
+                        </tbody>
                     </table>
                 </div>
             </div>
