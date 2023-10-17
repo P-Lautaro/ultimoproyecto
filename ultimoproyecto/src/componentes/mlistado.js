@@ -9,14 +9,15 @@ export default function MListado (){
             <div className="Modificar">
                 <h2 className="titulo">Modificar Listado</h2>
                 <table className="tabla">
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Apellido</th>
-                                <th>D.N.I</th>
-                                <th></th>
-                            </tr>
-                        </thead>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>D.N.I</th>
+                            <th>Presente</th>
+                            <th>Ausente</th>
+                        </tr>
+                    </thead>
                 </table>
             </div>
         </div>
