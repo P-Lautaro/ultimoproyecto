@@ -8,7 +8,8 @@ export default function MListado (){
             <Nav Infoh1="Asistencia de Alumnos"/>
             <div className="Modificar">
                 <h2 className="titulo">Modificar Listado</h2>
-
+                <table className="tabla">
+                </table>
             </div>
         </div>
     )
