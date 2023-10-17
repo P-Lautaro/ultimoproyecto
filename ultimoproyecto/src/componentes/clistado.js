@@ -12,10 +12,13 @@ export default function Cistado (){
             nombre: "",
             apellido: "",
             dni: "",
-            asistencias: "",
-            informe: "",
           });
     };
+    const isCamposCompletos =
+    nuevoAlumno.nombre &&
+    nuevoAlumno.apellido &&
+    nuevoAlumno.dni;
+
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
