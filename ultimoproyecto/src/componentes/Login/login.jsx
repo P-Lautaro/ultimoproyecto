@@ -4,8 +4,15 @@ import user_icon from '../Assets/person.png';
 import password_icon from '../Assets/password.png';
 import email_icon from '../Assets/email.png';
 const Login = () =>{
-   const [action, setAction] = useState("Login");
-   return (
+  const [action, setAction] = useState("Login");
+  const [dni, setDni] = useState("");
+  const [nombre, setNombre] = useState("");
+  const [apellido, setApellido] = useState("");
+  const [dniError, setDniError] = useState("");
+  const [nombreError, setNombreError] = useState("");
+  const [apellidoError, setApellidoError] = useState("");
+
+  return (
     <div className="container">
         <div className="header">
             <div className="text">{action}</div>
