@@ -5,50 +5,7 @@ import password_icon from '../Assets/password.png';
 import email_icon from '../Assets/email.png';
 const Login = () =>{
   const [action, setAction] = useState("Login");
-  const [dni, setDni] = useState("");
-  const [nombre, setNombre] = useState("");
-  const [apellido, setApellido] = useState("");
-  const [dniError, setDniError] = useState("");
-  const [nombreError, setNombreError] = useState("");
-  const [apellidoError, setApellidoError] = useState("");
 
-
-  const handleDniChange = (e) => {
-    const value = e.target.value;
-    // Validar que DNI tenga 8 caracteres y sean números
-    if (/^\d{8}$/.test(value)) {
-      setDni(value);
-      setDniError("");
-    } else {
-      setDni("");
-      setDniError("DNI debe tener exactamente 8 números.");
-    }
-  };
-
-  const handleNombreChange = (e) => {
-    const value = e.target.value;
-    // Validar que el nombre tenga más de 3 caracteres
-    if (value.length > 3) {
-      setNombre(value);
-      setNombreError("");
-    } else {
-      setNombre("");
-      setNombreError("El nombre debe tener más de 3 caracteres.");
-    }
-  };
-
-  const handleApellidoChange = (e) => {
-    const value = e.target.value;
-    // Validar que el apellido tenga más de 3 caracteres
-    if (value.length > 3) {
-      setApellido(value);
-      setApellidoError("");
-    } else {
-      setApellido("");
-      setApellidoError("El apellido debe tener más de 3 caracteres.");
-    }
-  };
-  
   return (
     <div className="container">
         <div className="header">
