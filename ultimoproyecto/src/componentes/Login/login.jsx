@@ -36,6 +36,19 @@ const Login = () =>{
       setNombreError("El nombre debe tener más de 3 caracteres.");
     }
   };
+
+  const handleApellidoChange = (e) => {
+    const value = e.target.value;
+    // Validar que el apellido tenga más de 3 caracteres
+    if (value.length > 3) {
+      setApellido(value);
+      setApellidoError("");
+    } else {
+      setApellido("");
+      setApellidoError("El apellido debe tener más de 3 caracteres.");
+    }
+  };
+  
   return (
     <div className="container">
         <div className="header">
