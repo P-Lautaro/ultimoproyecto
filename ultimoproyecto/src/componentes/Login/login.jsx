@@ -25,6 +25,17 @@ const Login = () =>{
     }
   };
 
+  const handleNombreChange = (e) => {
+    const value = e.target.value;
+    // Validar que el nombre tenga más de 3 caracteres
+    if (value.length > 3) {
+      setNombre(value);
+      setNombreError("");
+    } else {
+      setNombre("");
+      setNombreError("El nombre debe tener más de 3 caracteres.");
+    }
+  };
   return (
     <div className="container">
         <div className="header">
