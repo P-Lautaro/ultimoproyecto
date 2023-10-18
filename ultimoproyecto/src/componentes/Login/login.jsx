@@ -12,6 +12,19 @@ const Login = () =>{
   const [nombreError, setNombreError] = useState("");
   const [apellidoError, setApellidoError] = useState("");
 
+
+  const handleDniChange = (e) => {
+    const value = e.target.value;
+    // Validar que DNI tenga 8 caracteres y sean números
+    if (/^\d{8}$/.test(value)) {
+      setDni(value);
+      setDniError("");
+    } else {
+      setDni("");
+      setDniError("DNI debe tener exactamente 8 números.");
+    }
+  };
+
   return (
     <div className="container">
         <div className="header">
