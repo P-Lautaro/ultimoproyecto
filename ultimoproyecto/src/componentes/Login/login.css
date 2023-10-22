@@ -5,6 +5,7 @@
     border: 1px solid;
     border-radius: 40px;
     background-color: #ffffff;
+    transform: translate(3%, 8%);
 }
 .form-title {
     text-align: center;
