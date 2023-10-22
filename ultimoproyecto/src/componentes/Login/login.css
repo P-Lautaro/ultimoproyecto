@@ -72,8 +72,4 @@
     color: #4c00b4;
     cursor: pointer;
 }
-.submit-container{
-    display: flex;
-    gap: 30px;
-    margin: 60px auto ;
-}
+
