@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../../App.css'
+import './login.css'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle,faGithub } from '@fortawesome/free-brands-svg-icons';
