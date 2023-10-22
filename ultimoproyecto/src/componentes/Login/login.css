@@ -10,12 +10,15 @@
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
-  }
-  .input-field {
+}
+.input-field {
     width: 100%;
     padding: 10px;
     margin: 10px;
     border: 1px solid;
     border-radius: 3px;
-  }
+}
+.verPassword{
+    background-color: #f9f9f9;
+}
 
