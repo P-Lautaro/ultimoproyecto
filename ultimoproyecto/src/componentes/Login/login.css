@@ -48,4 +48,11 @@
   .google-signin-button svg {
     margin-right: 10px;
   }
+  .inicio{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    transform: translate(14%, 9%);
+  }
 
