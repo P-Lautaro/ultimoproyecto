@@ -1,5 +1,5 @@
 body{
-    background-color: #03245a;
+    background-color: #0f2446;
 }
 
 .form-container{
@@ -68,4 +68,11 @@ body{
 button:hover {
     background-color: #05d120;
 }
-
+.verPassword{
+    width: 80%;
+    padding: 4px;
+    margin: 6px 0;
+    background-color: #777676;
+    transform: translate(150%, 9%);
+    max-width: 100px;
+}
