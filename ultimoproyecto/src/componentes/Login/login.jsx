@@ -88,12 +88,12 @@ function Login(props) {
           <span>Iniciar sesión con GitHub</span>
         </button>
 
-        <h6 className='form-title'>
+        <h6 className='form'>
             <Link to='/Recuper-Contraseña' className='button'>
              ¿Olvidaste tu contraseña?
             </Link>
         </h6>
-        <h4 className='form-title'> ¿No tienes cuenta?
+        <h4 className='form'> ¿No tienes cuenta?
             <Link to='/Registro' className='button'>
                 Registrate
             </Link>
