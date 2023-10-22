@@ -58,3 +58,6 @@
 .button{
     color: #d80000;
 }
+.google-signin-button:hover {
+    background-color: #04067c; 
+}
