@@ -30,7 +30,7 @@ function Login(props) {
           navigate("/Home");
           console.log("Iniciado sesion con exito!!")
         } catch (error) {
-          alert ("El correo o la contaseña estan incorrecta");
+          alert ("El correo o la contaseña estan incorrectos");
         }
       
   }

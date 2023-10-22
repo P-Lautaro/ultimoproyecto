@@ -22,7 +22,7 @@ body{
     border: 1px solid;
     border-radius: 40px;
     background-color: #ffffff;
-    transform: translate(3%, 8%);
+    transform: translate(3%, 9%);
 }
 .form-title {
     text-align: center;
@@ -70,7 +70,7 @@ body{
     padding: 10px;
     margin: 10px 0;
     background-color: #ffffff;
-    transform: translate(14%, 9%);
+    transform: translate(14%, -140%);
 }
 .button{
     color: #d80000;
@@ -86,6 +86,7 @@ button:hover {
     padding: 4px;
     margin: 7px 0;
     background-color: #777676;
-    transform: translate(291%, -146%);
+    transform: translate(291%, -141%);
     max-width: 100px;
+    border: 2px solid;
 }
