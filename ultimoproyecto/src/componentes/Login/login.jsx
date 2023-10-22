@@ -30,7 +30,7 @@ function Login(props) {
           navigate("/Home");
           console.log("Iniciado sesion con exito!!")
         } catch (error) {
-          alert ("El correo es incorrecto");
+          alert ("El correo o la contaseña estan incorrecta");
         }
       
   }
@@ -72,7 +72,7 @@ function Login(props) {
           className="verPassword"
           onClick={togglePasswordVisibility}
           >
-            c
+            Mostrar Contraseña
           </button>
           <button className='inicio'>Inicia Sesion</button>
           
