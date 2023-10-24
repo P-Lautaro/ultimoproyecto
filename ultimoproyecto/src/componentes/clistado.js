@@ -35,8 +35,9 @@ export default function Cistado() {
     const nuevosAlumnos = [...alumnos];
     nuevosAlumnos.splice(index, 1);
 
-    const dbRef = firebase.database().ref("alumnos");
-    dbRef.set(nuevosAlumnos);
+    // Use the database reference and the set function from Firebase SDK
+    const dbRef = ref(getDatabase(appFirebase), "alumnos");
+    set(dbRef, nuevosAlumnos);
 
     setAlumnos(nuevosAlumnos);
   };
