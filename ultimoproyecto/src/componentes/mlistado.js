@@ -21,7 +21,11 @@ export default function MListado (){
     
         fetchData();
       }, []);
-      
+    
+    
+    const updateAttendance = (index, status) => {
+        const updatedAlumnos = [...alumnos];
+        updatedAlumnos[index].status = status;
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
