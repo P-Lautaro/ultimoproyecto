@@ -74,7 +74,7 @@ function Login(props) {
           >
             
           </button>
-          <button className='inicio'>Inicia Sesion</button>
+          <button className='inicio'>Iniciar Sesion</button>
           
         </form>
 
