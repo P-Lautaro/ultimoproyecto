@@ -82,6 +82,7 @@ button a{
 .btn-eliminar{
     background-color: #ffffff;
     color: #000000;
+    border: 1px solid #ccc;
 }
 
 .btn-eliminar:hover{
