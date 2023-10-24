@@ -80,6 +80,7 @@
 .button2{
     margin-left: 5px;
     color: #305c73;
+    text-decoration: none;
 }
 .google-signin-button:hover {
     background-color: #4285F4; 
