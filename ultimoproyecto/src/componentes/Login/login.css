@@ -63,11 +63,7 @@
     margin-right: 20px;
   }
   .inicio{
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #ffffff;
-    transform: translate(14%, -140%);
+    background-color: #305c73;
 }
 .button{
     color: #d80000;
