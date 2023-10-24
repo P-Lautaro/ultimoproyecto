@@ -11,12 +11,14 @@ export default function MListado (){
     useEffect(() => {
         const fetchData = async () => {
           const dbRef = ref(getDatabase(appFirebase), "alumnos");
-          const snapshot = await get(dbRef);
+          
+         
+    const snapshot = await get(dbRef);
           if (snapshot.exists()) {
             setAlumnos(snapshot.val());
           }
         };
-      
+    
         fetchData();
       }, []);
       
