@@ -54,7 +54,7 @@ export default function Cistado() {
                   <td>{alumno.nombre}</td>
                   <td>{alumno.apellido}</td>
                   <td>{alumno.dni}</td>
-                  <td>
+                  <td className="btn-eliminar">
                     <button onClick={() => handleEliminarAlumno(index)}>Eliminar</button>
                   </td>
                 </tr>
