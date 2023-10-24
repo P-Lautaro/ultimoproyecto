@@ -1,13 +1,12 @@
 .form-container{
-    margin-top: 10%;
+    position: relative;
     max-width: 400px;
     height: 500px;
-    margin: 0 auto;
+    left: 35%;
     border: 1px solid;
     border-radius: 40px;
     background-color: #ffffff;
     transform: translate(3%, 9%);
-    box-shadow: 2px 2px;
 }
 .form-title {
     margin-top: 0px;
