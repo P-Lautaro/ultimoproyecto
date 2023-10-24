@@ -77,6 +77,9 @@
     color: #d80000;
     text-decoration: none;
 }
+.button2{
+    margin-left: 5px;
+}
 .google-signin-button:hover {
     background-color: #4285F4; 
 }
