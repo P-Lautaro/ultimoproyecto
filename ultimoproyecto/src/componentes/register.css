@@ -24,6 +24,11 @@
   text-align: center;
 }
 
+
+.titleR {
+  font-size: 36px;
+}
+
 .auth-wrapper {
  width: 100%;
  height: 100%;
