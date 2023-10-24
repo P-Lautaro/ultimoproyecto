@@ -53,6 +53,8 @@
   width: 100%;
   padding: 10px;
   background-color: #007bff;
+  border: none;
+  border-radius: 3px;
 }
 
 .auth-wrapper {
