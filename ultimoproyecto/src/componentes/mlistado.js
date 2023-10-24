@@ -27,13 +27,24 @@ export default function MListado (){
                 <table className="tabla">
                     <thead>
                         <tr>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>D.N.I</th>
-                            <th>Presente</th>
-                            <th>Ausente</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>D.N.I</th>
+                        <th>Presente</th>
+                        <th>Ausente</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        {alumnos.map((alumno, index) => (
+                        <tr key={index}>
+                            <td>{alumno.nombre}</td>
+                            <td>{alumno.apellido}</td>
+                            <td>{alumno.dni}</td>
+                            <td>Presente</td>
+                            <td>Ausente</td>
+                        </tr>
+                        ))}
+                    </tbody>
                 </table>
             </div>
         </div>
