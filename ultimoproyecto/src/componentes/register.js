@@ -1,7 +1,15 @@
 import React, { Component, useEffect, useState } from "react";
 import ReactDOM from 'react-dom/client'
-import 'register.css'
+import './register.css'
 export default function Register () {
+    const [fname, setFname] = useState("");
+    const [lname, setLname] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [passwordError, setPasswordError] = useState("");
+    const [emailError, setEmailError] = useState("");
+    const [lnameError, setLnameError] = useState("");
+  
     // Validar contraseña: al menos 6 caracteres, una mayúscula y un número
     const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{12,}$/;
     if (!passwordRegex.test(password)) {
