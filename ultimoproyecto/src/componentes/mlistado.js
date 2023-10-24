@@ -38,26 +38,32 @@ export default function MListado (){
             <div className="Modificar">
                 <h2 className="titulo">Modificar Listado</h2>
                 <table className="tabla">
-                    <thead>
-                        <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>D.N.I</th>
-                        <th>Presente</th>
-                        <th>Ausente</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {alumnos.map((alumno, index) => (
-                        <tr key={index}>
-                            <td>{alumno.nombre}</td>
-                            <td>{alumno.apellido}</td>
-                            <td>{alumno.dni}</td>
-                            <td>Presente</td>
-                            <td>Ausente</td>
-                        </tr>
-                        ))}
-                    </tbody>
+                <thead>
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>D.N.I</th>
+                    <th>Asistencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {alumnos.map((alumno, index) => (
+                    <tr key={index}>
+                        <td>{alumno.nombre}</td>
+                        <td>{alumno.apellido}</td>
+                        <td>{alumno.dni}</td>
+                        <td>
+                        <select
+                            value={alumno.status || "Presente"}
+                            onChange={(e) => updateAttendance(index, e.target.value)}
+                        >
+                            <option value="Presente">Presente</option>
+                            <option value="Ausente">Ausente</option>
+                        </select>
+                        </td>
+                    </tr>
+                    ))}
+                </tbody>
                 </table>
             </div>
         </div>
