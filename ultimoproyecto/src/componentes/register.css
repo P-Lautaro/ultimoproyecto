@@ -31,6 +31,8 @@
   height: 30px;
   padding: 15px;
   color:#013975;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .auth-wrapper {
