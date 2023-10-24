@@ -7,6 +7,18 @@ import './Modificar Listado/modifcarListado.css'
 export default function MListado (){
     const [alumnos, setAlumnos] = useState([]);
 
+    useEffect(() => {
+        const fetchData = async () => {
+          const dbRef = ref(getDatabase(appFirebase), "alumnos");
+          const snapshot = await get(dbRef);
+          if (snapshot.exists()) {
+            setAlumnos(snapshot.val());
+          }
+        };
+      
+        fetchData();
+      }, []);
+      
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
