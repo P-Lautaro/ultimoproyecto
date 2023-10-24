@@ -1,12 +1,8 @@
 .auth-inn{
-  display: flex;
   justify-content: center;
-  align-items: center;
   max-width: 400px;
   height: 450px;
   margin: 0 auto;
-  padding: 20px;
-  border: 1px solid;
   border-radius: 40px;
   background-color: #ffffff;
   transform: translate(3%, 9%);
@@ -14,25 +10,24 @@
 }
 
 .auth-container {
+  padding: 10px;
   width: 300px;
-  padding: 20px;
   border: 1px solid #ffffff;
   border-radius: 5px;
   background-color: #fff;
   text-align: center;
 }
 
-
 .titleR {
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 5px;
+  background-color: #305c73;
   font-size: 36px;
-  margin-top: 0px;
-  height: 30px;
-  padding: 15px;
-  color:#013975;
+  height: 40px;
+  color: #ffffff;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
-
 
 .form-control {
   width: 100%;
@@ -113,19 +108,17 @@ p {
 .forgot-password,
 .forgot-password a {
   text-align: right;
-  font-size: 13px;
+  font-size: 15px;
   padding-top: 10px;
-  color: #bebebe;
+  color: #000000;
   margin: 0;
 }
   
 .forgot-password a {
- color: #167bff;
+  color: #167bff;
+  text-decoration: none;
 }
 
-table,th,td {
-  border: 1px solid black !important;
-}
   
 @media only screen and (max-width: 1200px) {
   .auth-inner {
