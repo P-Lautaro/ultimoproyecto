@@ -67,3 +67,18 @@ p{
     text-align: center;
     border-radius: 20px;
 }
+
+.text2{
+    font-size: 50px;
+    margin-top: 10%;
+    margin-left: 0;
+    position: absolute;
+    color: #000000;
+    z-index: 1000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text2:hover{
+    color: white;
+}
+
