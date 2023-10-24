@@ -80,12 +80,10 @@ function Login(props) {
 
         <button onClick={signInWithGoogle} className='google-signin-button'>
           <FontAwesomeIcon icon={faGoogle} />
-          <span>Google</span>
         </button>    
 
         <button onClick={signInWithGithub} className='google-signin-button'>
           <FontAwesomeIcon icon={faGithub} />
-          <span>GitHub</span>
         </button>
 
         <h6 className='form'>

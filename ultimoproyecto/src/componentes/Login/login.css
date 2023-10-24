@@ -3,12 +3,11 @@
     max-width: 400px;
     height: 500px;
     margin: 0 auto;
-    padding: 20px;
     border: 1px solid;
     border-radius: 40px;
     background-color: #ffffff;
     transform: translate(3%, 9%);
-    box-shadow: 3px 3px 3px 3px;
+    box-shadow: 2px 2px;
 }
 .form-title {
     margin-top: 0px;
