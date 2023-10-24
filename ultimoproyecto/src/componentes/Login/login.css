@@ -8,6 +8,7 @@
     border-radius: 40px;
     background-color: #ffffff;
     transform: translate(3%, 9%);
+    box-shadow: 3px 3px 3px 3px;
 }
 .form-title {
     text-align: center;
