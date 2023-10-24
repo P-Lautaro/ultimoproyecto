@@ -71,10 +71,20 @@ input{
 
 button{
     background-color: #ffffff;
+    color: #000000;
     width: 100%;
 }
 
-
 button a{
     color: rgb(32, 32, 32);
+}
+
+.btn-eliminar{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-eliminar:hover{
+    background-color: red;
+    color: #ffffff;
 }
