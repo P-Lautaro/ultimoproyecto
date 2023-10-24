@@ -49,13 +49,12 @@
     background-color: #000000;
     color: #fff;
     margin-top: 10px;
-    box-shadow: 3px 3px 3px 3px;
     border: none;
     border-radius: 50px;
     margin-left: 38%;
     cursor: pointer;
   }
-  
+
   .google-signin-button svg {
     margin-right: 20px;
   }
@@ -69,6 +68,7 @@
     height: 40px;
     padding: 10px;
     border-radius: 50px;
+    text-decoration: none;
 }
 .button{
     color: #d80000;
