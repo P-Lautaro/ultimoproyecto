@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import firebase from "firebase/app";
+import "firebase/database";
 import { Nav } from "./Nav/nav";
 import './Crear Listado/CrearLstado.css';
 
