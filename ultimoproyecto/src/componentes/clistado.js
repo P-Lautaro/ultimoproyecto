@@ -11,15 +11,21 @@ export default function Cistado() {
   });
 
   const handleAgregarAlumno = () => {
-    const nuevosAlumnos = [...alumnos];
-    nuevosAlumnos.push(nuevoAlumno);
-    setAlumnos(nuevosAlumnos);
+    if (isCamposCompletos) {
+      const nuevosAlumnos = [...alumnos];
+      nuevosAlumnos.push(nuevoAlumno);
 
-    setNuevoAlumno({
-      nombre: "",
-      apellido: "",
-      dni: "",
-    });
+      // Save the data to Firebase
+      const dbRef = firebase.database().ref("alumnos"); // Replace "alumnos" with your database path
+      dbRef.set(nuevosAlumnos);
+
+      setAlumnos(nuevosAlumnos);
+      setNuevoAlumno({
+        nombre: "",
+        apellido: "",
+        dni: "",
+      });
+    }
   };
 
   const handleEliminarAlumno = (index) => {
@@ -55,7 +61,9 @@ export default function Cistado() {
                   <td>{alumno.apellido}</td>
                   <td>{alumno.dni}</td>
                   <td >
-                    <button className="btn-eliminar" onClick={() => handleEliminarAlumno(index)}>Eliminar</button>
+                    <button className="btn-eliminar" 
+                    onClick={() => handleEliminarAlumno(index)}
+                    >Eliminar</button>
                   </td>
                 </tr>
               ))}
@@ -67,6 +75,7 @@ export default function Cistado() {
                     onChange={(e) =>
                       setNuevoAlumno({ ...nuevoAlumno, nombre: e.target.value })
                     }
+                    maxLength="15"
                   />
                 </td>
                 <td>
@@ -76,6 +85,7 @@ export default function Cistado() {
                     onChange={(e) =>
                       setNuevoAlumno({ ...nuevoAlumno, apellido: e.target.value })
                     }
+                    maxLength="15"
                   />
                 </td>
                 <td>
