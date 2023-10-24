@@ -94,7 +94,7 @@ function Login(props) {
             </Link>
         </h6>
         <h4 className='form'> ¿No tienes cuenta?
-            <Link to='/Registro' className='button'>
+            <Link to='/Registro' className='button2'>
                 Registrate
             </Link>
         </h4>
