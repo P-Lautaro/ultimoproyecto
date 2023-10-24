@@ -85,7 +85,7 @@ function Login(props) {
 
         <button onClick={signInWithGithub} className='google-signin-button'>
           <FontAwesomeIcon icon={faGithub} />
-          <span>Iniciar sesión con GitHub</span>
+          <span></span>
         </button>
 
         <h6 className='form'>
