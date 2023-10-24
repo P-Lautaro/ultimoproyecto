@@ -32,7 +32,60 @@ export default function Register () {
 
     return (
         <div>
-
+            <div className="auth-inn">
+                <form onSubmit={handleSubmit}>
+                <h3 className="titleR">Registrarse</h3>
+                <div className="mb-3">
+                    <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Nombre"
+                    onChange={(e) => setFname(e.target.value)}
+                    />
+                </div>
+                <div className="mb-3">
+                    <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Apellido"
+                    onChange={(e) => setLname(e.target.value)}
+                    />
+                    {lnameError && (
+                    <p style={{ color: 'red' }}>{lnameError}</p>
+                    )}
+                </div>
+                <div className="mb-3">
+                    <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Correo Electronico"
+                    onChange={(e) => setEmail(e.target.value)}
+                    />
+                    {emailError && (
+                    <p style={{ color: 'red' }}>{emailError}</p>
+                    )}
+                </div>
+                <div className="mb-3">
+                    <input
+                    type="password"
+                    className="form-control"
+                    placeholder="Contraseña"
+                    onChange={(e) => setPassword(e.target.value)}
+                    />
+                    {passwordError && (
+                    <p style={{ color: 'red' }}>{passwordError}</p>
+                    )}
+                </div>
+                <div className="d-grid">
+                    <button type="submit" className="btn btn-primary">
+                    Registrarse
+                    </button>
+                </div>
+                <p className="forgot-password text-right">
+                    Ya estás registrado? <a href="/sign-in">Ingresar</a>
+                </p>
+                </form>
+            </div>
         </div>
     )
 }

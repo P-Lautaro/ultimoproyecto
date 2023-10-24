@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './home';
 import Cistado from "./componentes/clistado";
 import MListado from "./componentes/mlistado";
+import Register from "./componentes/register";
 
 function App() {
   const [loading, setLoading] = useState(false)
