@@ -82,8 +82,7 @@ function Login(props) {
           type="button"
           className="verPassword"
           onClick={togglePasswordVisibility}
-          >
-            
+          >:V
           </button>
           <button className='inicio'>Iniciar Sesion</button>
           
