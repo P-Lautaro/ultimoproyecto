@@ -26,6 +26,12 @@ export default function MListado (){
     const updateAttendance = (index, status) => {
         const updatedAlumnos = [...alumnos];
         updatedAlumnos[index].status = status;
+
+    const dbRef = ref(getDatabase(appFirebase), "alumnos");
+        set(dbRef, updatedAlumnos);
+        setAlumnos(updatedAlumnos);
+    };
+
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
