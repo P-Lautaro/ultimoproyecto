@@ -35,6 +35,11 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+
+.form-control {
+  width: 100%;
+}
+
 .auth-wrapper {
  width: 100%;
  height: 100%;
