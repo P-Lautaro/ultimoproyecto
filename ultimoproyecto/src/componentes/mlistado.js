@@ -5,6 +5,8 @@ import { getDatabase, ref, get } from "firebase/database";
 import './Modificar Listado/modifcarListado.css'
 
 export default function MListado (){
+    const [alumnos, setAlumnos] = useState([]);
+
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
