@@ -11,6 +11,7 @@
     box-shadow: 3px 3px 3px 3px;
 }
 .form-title {
+    margin-top: 0px;
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
