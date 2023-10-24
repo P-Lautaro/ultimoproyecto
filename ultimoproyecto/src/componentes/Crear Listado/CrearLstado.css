@@ -90,3 +90,13 @@ button a{
     border: 1px solid red;
     color: #ffffff;
 }
+
+.text2{
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 0;
+    position: absolute;
+    color: #000000;
+    z-index: 1000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
