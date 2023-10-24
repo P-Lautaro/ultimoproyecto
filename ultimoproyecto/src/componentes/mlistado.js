@@ -55,6 +55,7 @@ export default function MListado (){
                         <td>{alumno.dni}</td>
                         <td>
                         <select
+                            className="Asistencia"
                             value={alumno.status || "Presente"}
                             onChange={(e) => updateAttendance(index, e.target.value)}
                         >
