@@ -4,9 +4,10 @@ import './login.css'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle,faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
 import appFirebase from '../../firebase/firebase.config.js'
-import { getAuth, signInWithEmailAndPassword, GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { getAuth, signInWithEmailAndPassword, GithubAuthProvider, GoogleAuthProvider, signInWithPopup, signInAnonymously } from 'firebase/auth'
 const auth = getAuth(appFirebase);
 
 
@@ -57,6 +58,16 @@ function Login(props) {
       });
   };
 
+  const signInAnonimo = () => {
+    signInAnonymously(auth)
+      .then(() => {
+        navigate("/Home");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
     return (
     <>
     <div className="form-container">
@@ -85,6 +96,10 @@ function Login(props) {
         <button onClick={signInWithGithub} className='google-signin-button'>
           <FontAwesomeIcon icon={faGithub} />
         </button>
+
+        <button onClick={signInAnonimo} className='google-signin-button'>
+          <FontAwesomeIcon icon={faUserSecret} />
+        </button>
 
         <h6 className='form'>
             <Link to='/Recuper-Contraseña' className='button'>
