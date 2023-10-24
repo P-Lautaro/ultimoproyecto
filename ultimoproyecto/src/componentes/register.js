@@ -91,7 +91,7 @@ const handleSubmit = (e) => {
                     </button>
                 </div>
                 <p className="forgot-password text-right">
-                    Ya estás registrado? <a href="/sign-in">Ingresar</a>
+                    Ya estás registrado? <a href="/">Ingresar</a>
                 </p>
                 </form>
             </div>
