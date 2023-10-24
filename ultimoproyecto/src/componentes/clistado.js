@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import firebase from "firebase/app";
 import "firebase/database";
+import appFirebase from "../firebase/firebase.config"; 
 import { Nav } from "./Nav/nav";
 import './Crear Listado/CrearLstado.css';
 
@@ -44,6 +44,8 @@ export default function Cistado() {
     nuevoAlumno.apellido &&
     nuevoAlumno.dni;
 
+    const dbRef = getDatabase(appFirebase);
+    
   return (
     <div>
       <Nav Infoh1="Asistencia de Alumnos" />
