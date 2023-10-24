@@ -87,7 +87,7 @@ const handleSubmit = (e) => {
                 </div>
                 <div className="d-grid">
                     <button type="submit" className="btn btn-primary">
-                    Registrarse
+                    <a href="/Home">Registrarse</a>
                     </button>
                 </div>
                 <p className="forgot-password">
