@@ -90,7 +90,7 @@ const handleSubmit = (e) => {
                     Registrarse
                     </button>
                 </div>
-                <p className="forgot-password text-right">
+                <p className="forgot-password">
                     Ya estás registrado? <a href="/">Ingresar</a>
                 </p>
                 </form>
