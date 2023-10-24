@@ -60,6 +60,11 @@
   cursor: pointer;
 }
 
+.forgot-password {
+  text-align: right;
+  margin-top: 10px;
+}
+
 .btn-primary:hover {
   background-color: #0056b3;
 }
