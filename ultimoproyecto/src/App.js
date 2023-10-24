@@ -25,6 +25,7 @@ function App() {
           <Route path="/Home" element={<Home/>} />
           <Route path="/Crear-Listado" element={<Cistado/>}/>
           <Route path="/Tomar-Asistencia" element={<MListado/>}/>
+          <Route path="/Registrase" element={<Register/>} />
       </Routes>
     </Router>
   );
