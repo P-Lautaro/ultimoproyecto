@@ -8,6 +8,12 @@ export default function Register () {
       setPasswordError("La contraseña debe tener al menos 12 caracteres, una letra mayúscula y un número.");
       return;
     }
+
+    // Validar correo electrónico
+    if (!email.includes("@")) {
+        setEmailError("El correo electrónico debe contener un '@'.");
+        return;
+      }
     return (
         <div>
 
