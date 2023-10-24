@@ -14,6 +14,17 @@ export default function Register () {
         setEmailError("El correo electrónico debe contener un '@'.");
         return;
       }
+
+    if (email.endsWith("gmail.com")) {
+        // La dirección de correo es de Gmail, no necesitas hacer nada adicional.
+    } else if (email.endsWith("yahoo.com") || email.endsWith("outlook.com") || email.endsWith("hotmail.com")) {
+        // La dirección de correo es de Yahoo Mail, Outlook o Hotmail, no necesitas hacer nada adicional.
+    } else {
+        // La dirección de correo no es de ningún proveedor permitido.
+        setEmailError("El correo electrónico debe terminar con 'gmail.com', 'yahoo.com', 'outlook.com' o 'hotmail.com'.");
+    return;
+    }
+
     return (
         <div>
 
