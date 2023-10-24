@@ -15,7 +15,6 @@ export default function Cistado() {
       const nuevosAlumnos = [...alumnos];
       nuevosAlumnos.push(nuevoAlumno);
 
-      // Save the data to Firebase
       const dbRef = firebase.database().ref("alumnos"); // Replace "alumnos" with your database path
       dbRef.set(nuevosAlumnos);
 
@@ -31,6 +30,10 @@ export default function Cistado() {
   const handleEliminarAlumno = (index) => {
     const nuevosAlumnos = [...alumnos];
     nuevosAlumnos.splice(index, 1);
+
+    const dbRef = firebase.database().ref("alumnos");
+    dbRef.set(nuevosAlumnos);
+
     setAlumnos(nuevosAlumnos);
   };
 
