@@ -72,7 +72,7 @@ function Login(props) {
           className="verPassword"
           onClick={togglePasswordVisibility}
           >
-            Mostrar Contraseña
+            
           </button>
           <button className='inicio'>Inicia Sesion</button>
           
