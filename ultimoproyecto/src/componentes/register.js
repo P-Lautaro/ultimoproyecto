@@ -25,6 +25,11 @@ export default function Register () {
     return;
     }
 
+    if (lname.length > 24) {
+        setLnameError("El apellido no puede tener más de 24 caracteres.");
+        return;
+    }
+
     return (
         <div>
 
