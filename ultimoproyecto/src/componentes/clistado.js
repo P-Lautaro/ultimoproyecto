@@ -71,11 +71,16 @@ export default function Cistado (){
                             </td>
                             <td>
                                 <input
-                                type="text"
-                                value={nuevoAlumno.dni}
-                                onChange={(e) =>
-                                    setNuevoAlumno({ ...nuevoAlumno, dni: e.target.value })
-                                }
+                                    type="text"
+                                    value={nuevoAlumno.dni}
+                                    onChange={(e) => {
+                                        const newValue = e.target.value;
+                                        if (/^\d{0,10}$/.test(newValue)) { // Validar que solo se ingresen números y como máximo 10 caracteres
+                                        setNuevoAlumno({ ...nuevoAlumno, dni: newValue });
+                                        }
+                                    }}
+                                    pattern="\d*"
+                                    maxLength="10"
                                 />
                             </td>
                             <td>
