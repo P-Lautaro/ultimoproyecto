@@ -17,3 +17,9 @@
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+img{
+    position: absolute;
+    left: 95%;
+    height: 40px;
+}
