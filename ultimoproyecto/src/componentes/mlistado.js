@@ -3,6 +3,7 @@ import { Nav } from "./Nav/nav";
 import appFirebase from "../firebase/firebase.config"; 
 import { getDatabase, ref, get, set } from "firebase/database";
 import './Modificar Listado/modifcarListado.css';
+import { Curso } from "./Curso/cursos";
 
 export default function MListado (){
     const [alumnos, setAlumnos] = useState([]);
@@ -34,7 +35,9 @@ export default function MListado (){
 
     return (
         <div>
+            
             <Nav Infoh1="Asistencia de Alumnos"/>
+            <Curso/>
             <div className="Modificar">
                 <h2 className="titulo">Modificar Listado</h2>
                 <table className="tabla">
