@@ -16,18 +16,7 @@ export default function Listado() {
   const isCamposCompletos =
     nuevoAlumno.nombre &&
     nuevoAlumno.apellido &&
-    nuevoAlumno.dni;
-
-  useEffect(() => {
-    // Use the database reference and the get function from Firebase SDK to retrieve existing data
-    const dbRef = ref(getDatabase(appFirebase), "alumnos");
-    get(dbRef).then((snapshot) => {
-      if (snapshot.exists()) {
-        const existingAlumnos = snapshot.val();
-        setAlumnos(existingAlumnos || []);
-      }
-    });
-  }, []);
+    nuevoAlumno.dni.length >= 8; // Comprobar que D.N.I tiene al menos 8 caracteres
 
   useEffect(() => {
     if (isCamposCompletos) {
@@ -45,6 +34,17 @@ export default function Listado() {
       });
     }
   }, [isCamposCompletos]);
+
+  useEffect(() => {
+    // Use the database reference and the get function from Firebase SDK to retrieve existing data
+    const dbRef = ref(getDatabase(appFirebase), "alumnos");
+    get(dbRef).then((snapshot) => {
+      if (snapshot.exists()) {
+        const existingAlumnos = snapshot.val();
+        setAlumnos(existingAlumnos || []);
+      }
+    });
+  }, []);
 
   const handleEliminarAlumno = (index) => {
     const nuevosAlumnos = [...alumnos];
