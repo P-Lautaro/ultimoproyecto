@@ -56,6 +56,7 @@ export default function MListado (){
                         <td>
                             <label>
                                 <input
+                                    className="asistencia" 
                                     type="radio"
                                     name={`attendance-${index}`}
                                     value="Presente"
@@ -67,6 +68,7 @@ export default function MListado (){
                         <td>   
                             <label>
                                 <input
+                                    className="asistencia" 
                                     type="radio"
                                     name={`attendance-${index}`}
                                     value="Ausente"
