@@ -35,16 +35,6 @@ export default function MListado (){
     return (
         <div>
             <Nav Infoh1="Asistencia de Alumnos"/>
-            <div>
-                <select className="asistencia-curso"
-                    value="Curso">
-                        <option value="">Curso</option>
-                        <option value="61">6to 1ra</option>
-                        <option value="62">6to 2da</option>
-                        <option value="63">6to 3ra</option>
-                        <option value="64">6to 4ta</option>
-                </select>
-            </div>
             <div className="Modificar">
                 <h2 className="titulo">Modificar Listado</h2>
                 <table className="tabla">
