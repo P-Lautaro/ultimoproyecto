@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "firebase/database";
 import appFirebase from "../firebase/firebase.config"; 
-import { getDatabase, ref, set } from "firebase/database"; // Import the necessary functions from Firebase
+import { getDatabase, ref, get, set } from "firebase/database"; 
 import { Nav } from "./Nav/nav";
 import './Crear Listado/CrearLstado.css';
 
-export default function Cistado() {
+export default function Listado() {
   const [alumnos, setAlumnos] = useState([]);
   const [nuevoAlumno, setNuevoAlumno] = useState({
     nombre: "",
@@ -13,12 +13,22 @@ export default function Cistado() {
     dni: "",
   });
 
+  useEffect(() => {
+    // Use the database reference and the get function from Firebase SDK to retrieve existing data
+    const dbRef = ref(getDatabase(appFirebase), "alumnos");
+    get(dbRef).then((snapshot) => {
+      if (snapshot.exists()) {
+        const existingAlumnos = snapshot.val();
+        setAlumnos(existingAlumnos || []);
+      }
+    });
+  }, []);
+
   const handleAgregarAlumno = () => {
     if (isCamposCompletos) {
-      const nuevosAlumnos = [...alumnos];
-      nuevosAlumnos.push(nuevoAlumno);
+      const nuevosAlumnos = [...alumnos, nuevoAlumno];
 
-      // Use the database reference and the set function from Firebase SDK
+      // Use the database reference and the set function to save the updated data
       const dbRef = ref(getDatabase(appFirebase), "alumnos");
       set(dbRef, nuevosAlumnos);
 
@@ -35,7 +45,7 @@ export default function Cistado() {
     const nuevosAlumnos = [...alumnos];
     nuevosAlumnos.splice(index, 1);
 
-    // Use the database reference and the set function from Firebase SDK
+    // Use the database reference and the set function to save the updated data
     const dbRef = ref(getDatabase(appFirebase), "alumnos");
     set(dbRef, nuevosAlumnos);
 
@@ -46,8 +56,6 @@ export default function Cistado() {
     nuevoAlumno.nombre &&
     nuevoAlumno.apellido &&
     nuevoAlumno.dni;
-
-    const dbRef = getDatabase(appFirebase);
 
   return (
     <div>
@@ -70,7 +78,7 @@ export default function Cistado() {
                   <td>{alumno.nombre}</td>
                   <td>{alumno.apellido}</td>
                   <td>{alumno.dni}</td>
-                  <td >
+                  <td>
                     <button className="btn-eliminar" 
                     onClick={() => handleEliminarAlumno(index)}
                     >Eliminar</button>
