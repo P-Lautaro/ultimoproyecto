@@ -81,3 +81,13 @@ p{
 .modificarListado .text2:hover{
     color: white;
 }
+
+.asistencia{
+    margin-left: 40%;
+    width: 20px;
+}
+
+.asistencia:hover{
+    background-color: red;
+}
+
