@@ -43,8 +43,8 @@ export default function MListado (){
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>D.N.I</th>
-                    <th>Asistencia</th>
-                    <th></th>
+                    <th>Presente</th>
+                    <th>Ausente</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -62,8 +62,9 @@ export default function MListado (){
                                     checked={alumno.status === "Presente"}
                                     onChange={() => updateAttendance(index, "Presente")}
                                 />
-                                Presente
                             </label>
+                        </td>
+                        <td>   
                             <label>
                                 <input
                                     type="radio"
@@ -72,9 +73,8 @@ export default function MListado (){
                                     checked={alumno.status === "Ausente"}
                                     onChange={() => updateAttendance(index, "Ausente")}
                                 />
-                                Ausente
                             </label>
-                        </td>
+                        </td> 
                     </tr>
                     ))}
                 </tbody>
