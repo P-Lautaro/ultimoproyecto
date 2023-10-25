@@ -1,9 +1,8 @@
-import React, { Component, useEffect, useState } from "react";
-import ReactDOM from "react-dom/client";
+import React, { useEffect, useState } from "react";
 import { Nav } from "./Nav/nav";
 import appFirebase from "../firebase/firebase.config"; 
 import { getDatabase, ref, get, set } from "firebase/database";
-import './Modificar Listado/modifcarListado.css'
+import './Modificar Listado/modifcarListado.css';
 
 export default function MListado (){
     const [alumnos, setAlumnos] = useState([]);
@@ -45,6 +44,7 @@ export default function MListado (){
                     <th>Apellido</th>
                     <th>D.N.I</th>
                     <th>Asistencia</th>
+                    <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,14 +54,26 @@ export default function MListado (){
                         <td>{alumno.apellido}</td>
                         <td>{alumno.dni}</td>
                         <td>
-                        <select
-                            className="Asistencia"
-                            value={alumno.status || "Presente"}
-                            onChange={(e) => updateAttendance(index, e.target.value)}
-                        >
-                            <option value="Presente">Presente</option>
-                            <option value="Ausente">Ausente</option>
-                        </select>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name={`attendance-${index}`}
+                                    value="Presente"
+                                    checked={alumno.status === "Presente"}
+                                    onChange={() => updateAttendance(index, "Presente")}
+                                />
+                                Presente
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name={`attendance-${index}`}
+                                    value="Ausente"
+                                    checked={alumno.status === "Ausente"}
+                                    onChange={() => updateAttendance(index, "Ausente")}
+                                />
+                                Ausente
+                            </label>
                         </td>
                     </tr>
                     ))}
