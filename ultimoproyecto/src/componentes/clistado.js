@@ -14,8 +14,8 @@ export default function Listado() {
   });
 
   const isCamposCompletos =
-    nuevoAlumno.nombre &&
-    nuevoAlumno.apellido &&
+    nuevoAlumno.nombre.length >= 3 &&
+    nuevoAlumno.apellido.length >= 6 &&
     nuevoAlumno.dni.length >= 8; // Comprobar que D.N.I tiene al menos 8 caracteres
 
   useEffect(() => {
