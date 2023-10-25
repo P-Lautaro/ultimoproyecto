@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "firebase/database";
 import appFirebase from "../firebase/firebase.config"; 
-import { getDatabase, ref, get, set } from "firebase/database"; 
+import { getDatabase, ref, set, get } from "firebase/database"; 
 import { Nav } from "./Nav/nav";
 import './Crear Listado/CrearLstado.css';
 
@@ -12,6 +12,11 @@ export default function Listado() {
     apellido: "",
     dni: "",
   });
+
+  const isCamposCompletos =
+    nuevoAlumno.nombre &&
+    nuevoAlumno.apellido &&
+    nuevoAlumno.dni;
 
   useEffect(() => {
     // Use the database reference and the get function from Firebase SDK to retrieve existing data
@@ -24,7 +29,7 @@ export default function Listado() {
     });
   }, []);
 
-  const handleAgregarAlumno = () => {
+  useEffect(() => {
     if (isCamposCompletos) {
       const nuevosAlumnos = [...alumnos, nuevoAlumno];
 
@@ -39,7 +44,7 @@ export default function Listado() {
         dni: "",
       });
     }
-  };
+  }, [isCamposCompletos]);
 
   const handleEliminarAlumno = (index) => {
     const nuevosAlumnos = [...alumnos];
@@ -51,11 +56,6 @@ export default function Listado() {
 
     setAlumnos(nuevosAlumnos);
   };
-
-  const isCamposCompletos =
-    nuevoAlumno.nombre &&
-    nuevoAlumno.apellido &&
-    nuevoAlumno.dni;
 
   return (
     <div>
