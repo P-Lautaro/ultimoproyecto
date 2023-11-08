@@ -20,6 +20,9 @@ function App() {
   },[]);
 
   return (
+    <div className="App">
+
+    
     <Router>
       <Routes>
           <Route exact path="/" element={<Login/>}/>
@@ -29,6 +32,7 @@ function App() {
           <Route path="/Registro" element={<Register/>} />
       </Routes>
     </Router>
+    </div>
   );
 }
 
