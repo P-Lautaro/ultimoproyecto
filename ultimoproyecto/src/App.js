@@ -21,17 +21,26 @@ function App() {
 
   return (
     <div className="App">
-
-    
-    <Router>
-      <Routes>
-          <Route exact path="/" element={<Login/>}/>
-          <Route path="/Home" element={<Home/>} />
-          <Route path="/Crear-Listado" element={<Cistado/>}/>
-          <Route path="/Tomar-Asistencia" element={<MListado/>}/>
-          <Route path="/Registro" element={<Register/>} />
-      </Routes>
-    </Router>
+      {
+        loading? 
+        <ClipLoader
+        color={color}
+        loading={loading}
+        cssOverride={override}
+        size={150}
+        aria-label="Loading Spinner"
+        data-testid="loader" /> :
+        <Router>
+        <Routes>
+            <Route exact path="/" element={<Login/>}/>
+            <Route path="/Home" element={<Home/>} />
+            <Route path="/Crear-Listado" element={<Cistado/>}/>
+            <Route path="/Tomar-Asistencia" element={<MListado/>}/>
+            <Route path="/Registro" element={<Register/>} />
+        </Routes>
+      </Router>
+      }
+  
     </div>
   );
 }
