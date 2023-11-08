@@ -9,7 +9,7 @@ import Home from './home';
 import Cistado from "./componentes/clistado";
 import MListado from "./componentes/mlistado";
 import Register from "./componentes/register";
-import ClipLoader from "react-spinners/ClipLoader";
+import PulseLoader from "react-spinners/PulseLoader";
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -24,10 +24,9 @@ function App() {
     <div className="App">
       {
         loading? 
-        <ClipLoader
-        color={color}
+        <PulseLoader
+        color={'#36d7b7'}
         loading={loading}
-        cssOverride={override}
         size={150}
         aria-label="Loading Spinner"
         data-testid="loader" /> :
