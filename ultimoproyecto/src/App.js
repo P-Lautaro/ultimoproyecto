@@ -9,6 +9,7 @@ import Home from './home';
 import Cistado from "./componentes/clistado";
 import MListado from "./componentes/mlistado";
 import Register from "./componentes/register";
+import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
   const [loading, setLoading] = useState(false)
