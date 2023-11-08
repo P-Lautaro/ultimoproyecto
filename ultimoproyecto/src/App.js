@@ -27,7 +27,7 @@ function App() {
         <PulseLoader
         color={'#36d7b7'}
         loading={loading}
-        size={150}
+        size={30}
         aria-label="Loading Spinner"
         data-testid="loader" /> :
         <Router>
