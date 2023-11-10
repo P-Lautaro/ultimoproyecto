@@ -1,7 +1,7 @@
 .auth-inn{
   position: relative;
-  width: 174%;
-  height: 420px;
+  width: 160%;
+  height: 550px;
   border-radius: 40px;
   background-color: #ffffff;
   transform: translate(-19%, -10%);
@@ -38,13 +38,13 @@
   border-radius: 3px;
 }
 .mb-3{
-  max-width: 300px;
+  max-width: 220px;
   padding-left: 40px;
 }
 
 .d-grid{
-  max-width: 200px;
-  padding-left: 100px;
+  max-width: 194px;
+  padding-left: 43px;
   padding-top: 20px;
 }
 
@@ -67,6 +67,7 @@
 .forgot-password {
   text-align: right;
   margin-top: 10px;
+  padding-left: -1px;
 }
 
 p {
