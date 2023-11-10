@@ -1,6 +1,6 @@
 .auth-inn{
   position: relative;
-  left: 35%;
+  left: auto;
   max-width: 400px;
   height: 450px;
   border-radius: 40px;
