@@ -1,11 +1,11 @@
 .auth-inn{
   position: relative;
   width: 174%;
+  height: 420px;
   border-radius: 40px;
   background-color: #ffffff;
-  transform: translate(-19%, -22%);
+  transform: translate(-19%, -10%);
   box-shadow: 0px 14px 60px rgba(34, 35, 58, 0.445);
-
 }
 
 .auth-container {
