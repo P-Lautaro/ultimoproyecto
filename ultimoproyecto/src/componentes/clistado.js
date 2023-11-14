@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "firebase/database";
-import appFirebase from "../firebase/firebase.config"; 
-import { getDatabase, ref, set, get } from "firebase/database"; 
+import appFirebase from "../firebase/firebase.config";
+import { getDatabase, ref, set, get } from "firebase/database";
 import { Nav } from "./Nav/nav";
 import './Crear Listado/CrearLstado.css';
 
@@ -22,7 +22,6 @@ export default function Listado() {
     if (isCamposCompletos) {
       const nuevosAlumnos = [...alumnos, nuevoAlumno];
 
-      // Use the database reference and the set function to save the updated data
       const dbRef = ref(getDatabase(appFirebase), "alumnos");
       set(dbRef, nuevosAlumnos);
 
@@ -36,7 +35,6 @@ export default function Listado() {
   }, [isCamposCompletos]);
 
   useEffect(() => {
-    // Use the database reference and the get function from Firebase SDK to retrieve existing data
     const dbRef = ref(getDatabase(appFirebase), "alumnos");
     get(dbRef).then((snapshot) => {
       if (snapshot.exists()) {
@@ -50,7 +48,6 @@ export default function Listado() {
     const nuevosAlumnos = [...alumnos];
     nuevosAlumnos.splice(index, 1);
 
-    // Use the database reference and the set function to save the updated data
     const dbRef = ref(getDatabase(appFirebase), "alumnos");
     set(dbRef, nuevosAlumnos);
 
@@ -79,8 +76,8 @@ export default function Listado() {
                   <td>{alumno.apellido}</td>
                   <td>{alumno.dni}</td>
                   <td>
-                    <button className="btn-eliminar" 
-                    onClick={() => handleEliminarAlumno(index)}
+                    <button className="btn-eliminar"
+                      onClick={() => handleEliminarAlumno(index)}
                     >Eliminar</button>
                   </td>
                 </tr>
@@ -111,12 +108,8 @@ export default function Listado() {
                     type="text"
                     value={nuevoAlumno.dni}
                     onChange={(e) => {
-                      const newValue = e.target.value;
-                      if (/^\d{0,10}$/.test(newValue)) {
-                        setNuevoAlumno({ ...nuevoAlumno, dni: newValue });
-                      }
+                      setNuevoAlumno({ ...nuevoAlumno, dni: e.target.value });
                     }}
-                    pattern="\d*"
                     maxLength="10"
                   />
                 </td>
