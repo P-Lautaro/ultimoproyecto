@@ -54,7 +54,45 @@
     margin-left: 10%;
     margin-right: 10%;
   }
+  .github-signin-button {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0px 14px 60px rgba(34, 35, 58, 0.445);
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 10%;
+    border: 0;
+    margin-right: 10%;
+  }
+  .github-signin-button:hover {
+    background-color: rgb(255, 178, 77);
+  }
 
+  .signin-button:hover{
+    background-color:rgb(195, 0, 255);
+}
+
+  .signin-button{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(78, 0, 102);
+    box-shadow: 0px 14px 60px rgba(34, 35, 58, 0.445);
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 10%;
+    border: 0;
+    margin-right: 10%;
+  }
+  
   .google-signin-button svg {
     width: 25px;
   }
@@ -68,6 +106,7 @@
     height: 40px;
     padding: 10px;
     border-radius: 50px;
+    border: 0;
     text-decoration: none;
 }
 .button{

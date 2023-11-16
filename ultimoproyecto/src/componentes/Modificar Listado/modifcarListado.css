@@ -87,14 +87,5 @@ p{
     width: 20px;
 }
 
-.asistencia:hover{
-    background-color: red;
-}
 
-.asistencia-curso{
-    position: absolute;
-    background-color: #000000;
-    color: #000000;
-    z-index: 2000px;
-}
 

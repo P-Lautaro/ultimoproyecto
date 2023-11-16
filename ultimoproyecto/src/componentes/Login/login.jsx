@@ -89,11 +89,11 @@ function Login(props) {
           
         </form>
 
-        <button onClick={signInWithGoogle} className='google-signin-button'>
+        <button onClick={signInWithGoogle} className='github-signin-button'>
           <FontAwesomeIcon icon={faGoogle} />
         </button>    
 
-        <button onClick={signInWithGithub} className='google-signin-button'>
+        <button onClick={signInWithGithub} className='signin-button'>
           <FontAwesomeIcon icon={faGithub} />
         </button>
 

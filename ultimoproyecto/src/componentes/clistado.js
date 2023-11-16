@@ -11,12 +11,14 @@ export default function Listado() {
     nombre: "",
     apellido: "",
     dni: "",
+    curso: "", // Agrega el estado para el curso
   });
 
   const isCamposCompletos =
     nuevoAlumno.nombre.length >= 3 &&
     nuevoAlumno.apellido.length >= 6 &&
-    nuevoAlumno.dni.length >= 8; // Comprobar que D.N.I tiene al menos 8 caracteres
+    nuevoAlumno.dni.length >= 8 &&
+    nuevoAlumno.curso !== ""; // Agrega el chequeo para el curso
 
   useEffect(() => {
     if (isCamposCompletos) {
@@ -30,6 +32,7 @@ export default function Listado() {
         nombre: "",
         apellido: "",
         dni: "",
+        curso: "",
       });
     }
   }, [isCamposCompletos]);
@@ -66,6 +69,7 @@ export default function Listado() {
                 <th>Nombre</th>
                 <th>Apellido</th>
                 <th>D.N.I</th>
+                <th>Curso</th>
                 <th>Acciones</th>
               </tr>
             </thead>
@@ -75,6 +79,7 @@ export default function Listado() {
                   <td>{alumno.nombre}</td>
                   <td>{alumno.apellido}</td>
                   <td>{alumno.dni}</td>
+                  <td>{alumno.curso}</td>
                   <td>
                     <button className="btn-eliminar"
                       onClick={() => handleEliminarAlumno(index)}
@@ -114,13 +119,45 @@ export default function Listado() {
                   />
                 </td>
                 <td>
-                  <select className="asistencia-curso"
-                      value="Curso">
-                      <option value="">Curso</option>
-                      <option value="61">6to 1ra</option>
-                      <option value="62">6to 2da</option>
-                      <option value="63">6to 3ra</option>
-                      <option value="64">6to 4ta</option>
+                  <select
+                    className="asistencia-curso"
+                    value={nuevoAlumno.curso}
+                    onChange={(e) =>
+                      setNuevoAlumno({ ...nuevoAlumno, curso: e.target.value })
+                    }
+                  >
+                    <option value="">Cursos</option>
+                     {/*1ros*/}
+                     <option value="1ro 1ra">1ro 1ra</option>
+                      <option value="1ro 2da">1ro 2da</option>
+                      <option value="1ro 3ra">1ro 3ra</option>
+                      <option value="1ro 4ta">1ro 4ta</option>
+                      <option value="1ro 5ta">1ro 5ta</option>
+                      {/*2dos*/}
+                      <option value="2do 1ra">2do 1ra</option>
+                      <option value="2do 2da">2do 2da</option>
+                      <option value="2do 3ra">2do 3ra</option>
+                      <option value="2do 4ta">2do 4ta</option>
+                      {/*3ros*/}
+                      <option value="3ro 1ra">3ro 1ra</option>
+                      <option value="3ro 2da">3ro 2da</option>
+                      <option value="3ro 3ra">3ro 3ra</option>
+                      <option value="3ro 4ta">3ro 4ta</option>
+                      {/*4tos*/}
+                      <option value="4to 1ra">4to 1ra</option>
+                      <option value="4to 2da">4to 2da</option>
+                      <option value="4to 3ra">4to 3ra</option>
+                      <option value="4to 4ta">4to 4ta</option>
+                      {/*5tos*/}
+                      <option value="5to 1ra">5to 1ra</option>
+                      <option value="5to 2da">5to 2da</option>
+                      <option value="5to 3ra">5to 3ra</option>
+                      <option value="5to 4ta">5to 4ta</option>
+                      {/*6tos*/}
+                      <option value="6to 1ra">6to 1ra</option>
+                      <option value="6to 2da">6to 2da</option>
+                      <option value="6to 3ra">6to 3ra</option>
+                      <option value="6to 4ta">6to 4ta</option>
                   </select>
                 </td>
               </tr>
